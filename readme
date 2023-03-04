@@ -12,6 +12,7 @@ What failed: nvlddmkm.sy
 
 Background of this problem:
 
+March 4, 2023
 This error occurred a few hours after I updated Windows and updated the Nvidia driver through "Nvidia Geforce Experience".
 
 After I investigated it turns out that the file "nvlddmkm.sy" is not in C:\Windows\System32\ and this is the cause of the problem. 
