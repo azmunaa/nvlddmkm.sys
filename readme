@@ -1,0 +1,29 @@
+Solution to the blue screen problem:
+
+0xFFFFFFFFC0000005
+0xFFFF8067E1C7B7B
+0xFFFFCE094721E0B8
+0xFFFFCE094721D8D0
+
+Stop code: SYSTEM THREAD EXCEPTION NOT HANDLED
+What failed: nvlddmkm.sy
+
+==============================================
+
+Background of this problem:
+
+This error occurred a few hours after I updated Windows and updated the Nvidia driver through "Nvidia Geforce Experience".
+
+After I investigated it turns out that the file "nvlddmkm.sy" is not in C:\Windows\System32\ and this is the cause of the problem. 
+
+I have reinstalled the Nvidia driver, but the "nvlddmkm.sy" file still does not appear.
+
+==============================================
+
+Solution:
+
+1. Download and install the "Everything" software: https://www.voidtools.com/downloads/
+2. type in the search field: "nvlddmkm.sy"
+(in my case, the file "nvlddmkm.sy" is found in the folder "C:\Windows\System32\DriverStore\FileRepository\nvaci.inf_amd64_bd18144e1d01e587")
+3. Copy and paste the file in "C:\Windows\System32\"
+4. Restart the computer/laptop, done.
